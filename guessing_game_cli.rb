@@ -5,7 +5,7 @@ def run_guessing_game
   puts "Guess a number between 1-6:"
   guess = gets.chomp
   
-  if guess == number
+  if (number - guess) == 0
     puts "You guessed the correct number!"
   elsif guess == "exit"
     puts "Goodbye!"
